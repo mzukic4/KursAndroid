@@ -11,6 +11,9 @@ class Kviz {
     private var cetvrtoPitanje: Pitanje =
         Pitanje("Zagreb je glavni grad Hrvatske", true)
 
-    var pitanja: List<Pitanje> = listOf(prvoPitanje,drugoPitanje,trecePitanje,cetvrtoPitanje)
+    private var petoPitanje: Pitanje =
+        Pitanje("Tokyo je glavni grad Japana", true)
+
+    var pitanja: List<Pitanje> = listOf(prvoPitanje,drugoPitanje,trecePitanje,cetvrtoPitanje,petoPitanje)
 
 }
