@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.KvizActivity">
+
+    <TextView
+        android:id="@+id/textView_brojPitanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Pitanje: 1/4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_rezultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Rezultatl = 0"
+        app:layout_constraintStart_toStartOf="@+id/textView_brojPitanja"
+        app:layout_constraintTop_toBottomOf="@+id/textView_brojPitanja" />
+
+    <TextView
+        android:id="@+id/textViewPitanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Pitanja broj 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_rezultat" />
+
+    <Button
+        android:id="@+id/button_da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#7D8EE2"
+        android:text="DA"
+        app:layout_constraintEnd_toStartOf="@+id/button_ne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPitanje" />
+
+    <Button
+        android:id="@+id/button_ne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="NE"
+        app:layout_constraintBottom_toBottomOf="@+id/button_da"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_da"
+        app:layout_constraintTop_toTopOf="@+id/button_da"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/button_dalje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Dalje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_nazad"
+        app:layout_constraintTop_toBottomOf="@+id/button_da" />
+
+    <Button
+        android:id="@+id/button_kraj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Kraj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nazad"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_nazad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazad"
+        app:layout_constraintBottom_toBottomOf="@+id/button_dalje"
+        app:layout_constraintEnd_toStartOf="@+id/button_dalje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_dalje" />
+</androidx.constraintlayout.widget.ConstraintLayout>
